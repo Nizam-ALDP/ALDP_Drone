@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drone Dashboard</title>
+</head>
+<body>
+    <h1>Drone Telemetry</h1>
+    <p id="telemetry">Loading...</p>
+    <script>
+        async function loadTelemetry() {
+            const res = await fetch('/telemetry');
+            const data = await res.json();
+            document.getElementById('telemetry').innerText = JSON.stringify(data, null, 2);
+        }
+        setInterval(loadTelemetry, 1000);
+    </script>
+</body>
+</html>
