@@ -1,0 +1,11 @@
+archive.zip
+model.ipynb
+dataset
+yolo
+model.h5
+model1.h5
+plastic bottle.jpg
+saved_model.pb
+
+yolov8
+best.pt
